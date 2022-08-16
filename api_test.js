@@ -128,7 +128,7 @@ function SubmitForm(e) {
         }
         console.log(JSON.stringify(request));
 
-        fetch('https://test.com', {
+        fetch(attendanceurl , {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json"
