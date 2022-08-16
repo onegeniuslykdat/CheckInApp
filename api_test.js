@@ -128,7 +128,7 @@ function SubmitForm(e) {
         }
         console.log(JSON.stringify(request));
 
-        fetch(attendanceurl, {
+        fetch('https://test.com', {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json"
@@ -140,7 +140,7 @@ function SubmitForm(e) {
             alert('Successfully Checked In')
             console.log(resp.json());
         }).catch((err) => {
-            alert('An Error Occurred');
+            alert('Test Preview Successful');
             console.log(err);
         }).then(() => {
             btn.disabled = false;
